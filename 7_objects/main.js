@@ -17,3 +17,18 @@ function user(id, name, family, age){
 
 var p1 = new user(1, "jack", "williams", 25)
 console.log(p1)
+
+function fruit(name, color, taste){
+    this.name = name
+    this.color = color
+    this.taste = taste
+    this.change_name = function(new_name){
+        this.name = new_name
+    }
+}
+
+var f1 = new fruit("banana", "yellow", "sweet")
+console.log(f1)
+
+f1.change_name("pineapple")
+console.log(f1)
